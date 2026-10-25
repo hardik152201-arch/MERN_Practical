@@ -1,0 +1,434 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+}
+
+
+.app {
+    min-height: 100vh;
+}
+
+
+/* ===============================
+   Header
+================================ */
+
+.header {
+    background: #111827;
+    color: white;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+
+.header h1 {
+    margin: 0 0 8px;
+    font-size: 32px;
+}
+
+
+.header p {
+    margin: 0;
+    color: #cbd5e1;
+}
+
+
+/* ===============================
+   Container
+================================ */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+
+/* ===============================
+   Cards
+================================ */
+
+.upload-card,
+.files-card {
+    background: white;
+    border-radius: 14px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.07);
+}
+
+
+.upload-card h2,
+.files-card h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+
+.description {
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+
+/* ===============================
+   File Input
+================================ */
+
+.file-box {
+    border: 2px dashed #cbd5e1;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    background: #f8fafc;
+}
+
+
+.file-box input {
+    width: 100%;
+    cursor: pointer;
+}
+
+
+/* ===============================
+   Selected File
+================================ */
+
+.selected-file {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px;
+
+    background: #f1f5f9;
+
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+}
+
+
+.selected-file p {
+    margin: 5px 0 0;
+    color: #64748b;
+}
+
+
+.selected-file span {
+    font-weight: bold;
+}
+
+
+/* ===============================
+   Messages
+================================ */
+
+.error-message {
+    background: #fee2e2;
+    color: #b91c1c;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    margin-bottom: 15px;
+}
+
+
+.success-message {
+    background: #dcfce7;
+    color: #15803d;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    margin-bottom: 15px;
+}
+
+
+/* ===============================
+   Progress
+================================ */
+
+.progress-container {
+    margin-bottom: 20px;
+}
+
+
+.progress-header {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+}
+
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+
+    background: #e5e7eb;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+.progress {
+    height: 100%;
+
+    background: #2563eb;
+
+    transition: width 0.3s ease;
+}
+
+
+/* ===============================
+   Buttons
+================================ */
+
+.upload-button {
+    width: 100%;
+
+    border: none;
+
+    padding: 14px;
+
+    border-radius: 8px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.upload-button:hover:not(:disabled) {
+    background: #1d4ed8;
+}
+
+
+.upload-button:disabled {
+    background: #94a3b8;
+
+    cursor: not-allowed;
+}
+
+
+/* ===============================
+   Files Header
+================================ */
+
+.files-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+
+.files-header p {
+    color: #64748b;
+
+    margin: 0;
+}
+
+
+.refresh-button {
+    border: none;
+
+    background: #e2e8f0;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+.refresh-button:hover {
+    background: #cbd5e1;
+}
+
+
+/* ===============================
+   Table
+================================ */
+
+.table-container {
+    overflow-x: auto;
+}
+
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 750px;
+}
+
+
+th {
+    text-align: left;
+
+    background: #f8fafc;
+
+    padding: 14px;
+
+    color: #475569;
+
+    font-size: 14px;
+}
+
+
+td {
+    padding: 14px;
+
+    border-top: 1px solid #e5e7eb;
+
+    font-size: 14px;
+}
+
+
+.file-name {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-weight: 600;
+}
+
+
+.file-icon {
+    font-size: 20px;
+}
+
+
+/* ===============================
+   View Button
+================================ */
+
+.view-button {
+    display: inline-block;
+
+    text-decoration: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 7px 14px;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+}
+
+
+.view-button:hover {
+    background: #1d4ed8;
+}
+
+
+/* ===============================
+   Empty State
+================================ */
+
+.empty {
+    text-align: center;
+
+    padding: 60px 20px;
+
+    color: #64748b;
+}
+
+
+.empty-icon {
+    font-size: 50px;
+
+    margin-bottom: 15px;
+}
+
+
+.empty h3 {
+    color: #334155;
+
+    margin-bottom: 5px;
+}
+
+
+/* ===============================
+   Footer
+================================ */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+/* ===============================
+   Responsive
+================================ */
+
+@media (max-width: 600px) {
+
+    .header h1 {
+        font-size: 25px;
+    }
+
+
+    .container {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+
+    .upload-card,
+    .files-card {
+        padding: 20px;
+    }
+
+
+    .files-header {
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+}
